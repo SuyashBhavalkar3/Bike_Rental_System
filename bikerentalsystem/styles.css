@@ -1,0 +1,531 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* General styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 150px; /* Adjust the width as needed */
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ff8000; /* Highlight color on hover */
+}
+
+/* User Menu styling */
+.user-menu {
+    position: relative;
+}
+
+.user-menu .profile-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.user-menu .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.user-menu:hover .dropdown {
+    display: block;
+}
+
+.user-menu .dropdown a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.user-menu .dropdown a:hover {
+    background-color: #f0f0f0;
+}
+
+.email-display {
+    display: none; /* Hide email by default */
+    color: #fff;
+    background-color: #333;
+    padding: 5px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-menu:hover .email-display {
+    display: block; /* Show email on hover */
+}
+
+.cta-button {
+    background-color: #ff8000; /* Primary color */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #cc6600; /* Darker shade for hover effect */
+}
+
+/* Hero section styling */
+.hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    margin-top: 70px; /* Offset for fixed header */
+}
+
+.hero-content {
+    z-index: 2; /* Ensures text is above the background */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    background-color: #ff8000; /* Primary color */
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #cc6600; /* Darker shade for hover effect */
+}
+
+/* Optional: Text shadow for better readability on background images */
+.hero h1, .hero p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Featured Bikes Section */
+.featured-bikes {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.featured-bikes h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.bike-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bike-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+}
+
+.bike-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.bike-card h3 {
+    margin: 15px 0;
+}
+
+.bike-card p {
+    font-size: 1.2rem;
+    color: #ff8000;
+}
+
+/* Services Overview Section */
+.services-overview {
+    padding: 60px 0;
+}
+
+.services-overview h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+}
+
+.service img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+/* Customer Testimonials Section */
+.testimonials {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Promotional Section */
+.promotional {
+    padding: 60px 0;
+    background-color: #ff8000;
+    color: #fff;
+    text-align: center;
+}
+
+.promotional h2 {
+    margin-bottom: 20px;
+}
+
+.countdown {
+    margin-top: 20px;
+}
+
+#countdown-timer {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 60px 0;
+}
+
+.why-choose-us h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reasons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.reason {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+}
+
+.reason img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+/* Social Proof Section */
+.social-proof {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.social-proof h2 {
+    margin-bottom: 20px;
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 40px;
+}
+
+/* Newsletter Signup Section */
+.newsletter {
+    padding: 60px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.newsletter h2 {
+    margin-bottom: 20px;
+}
+
+/* General form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+    width: 100%; /* Ensures input fields take up the full width of their container */
+    padding: 10px; /* Adds padding inside the input fields */
+    margin-bottom: 10px; /* Adds space between input fields */
+    border: 1px solid #ccc; /* Adds a border to the input fields */
+    border-radius: 4px; /* Rounds the corners of the input fields */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+/* Specific styling for email input */
+form input[type="email"] {
+    background-color: #f9f9f9; /* Light grey background */
+    border: 1px solid #ddd; /* Lighter border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Button styling */
+form button {
+    background-color: #ff8000; /* Primary color */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem; /* Ensures the button text is legible */
+}
+
+form button:hover {
+    background-color: #cc6600; /* Darker shade for hover effect */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+footer h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #ff8000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Login Page Specific Styling */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4; /* Light background for login page */
+}
+
+.login-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Adjust the max width as needed */
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.login-form input {
+    border: 1px solid #ddd; /* Light border for input fields */
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.login-form button {
+    background-color: #ff8000; /* Primary color */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem; /* Ensures the button text is legible */
+    width: 100%; /* Makes the button full-width */
+}
+
+.login-form button:hover {
+    background-color: #cc6600; /* Darker shade for hover effect */
+}
+
+/* Hero Section Styling */
+.hero {
+    background: url('hero-bg.jpg') center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+}
+
+.hero-content {
+    position: relative;
+    max-width: 800px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1); /* Light glass effect */
+    border-radius: 10px;
+    backdrop-filter: blur(5px); /* Blurred effect */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #ff4500;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+    background: #ff5722;
+    transform: scale(1.05);
+}
